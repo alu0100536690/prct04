@@ -1,21 +1,7 @@
-#! /home/ubuntu/.rvm/rubies/ruby-2.0.0-p247/bin/ruby
-print "Espesifique el tamaño de la matriz: "
-STDOUT.flush
-t=gets.chomp
+system("clear")# Borramos la pantalla
+a = [[1,2,3],[4,5,6],[7,8,9]]
+b = [[4,5,6],[7,8,9],[0,1,2]]
 
-a=Array.new(t.to_i){Array.new(t.to_i)}
-b=Array.new(t.to_i){Array.new(t.to_i)}
-system("clear")	
-
-for index in 0 ... a.size*2
-	a[0][0] = gets.chomp.to_i
-end
-
-
-
-for index in 0 ... a.size
-	puts  "#{a[index].inspect}"
-end
 
 	opcion=-1
 	while opcion!=0 do
@@ -33,12 +19,9 @@ end
 
 		if opcion == 1 
 			 
-				print "Introduce el primer numero: "
-				x = gets.chomp.to_i
-				print "Introduce el segundo numero: "
-				y = gets.chomp.to_i
-				puts "La suma de #{x} y #{y} vale #{x+y}"
-                          
+		for index in 0 ... a.size
+	       puts  "#{a[index].inspect}"+"#{b[index].inspect}"
+        end 
 
                 elsif opcion == 2  
 			   
