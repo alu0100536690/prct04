@@ -19,9 +19,7 @@ m,n = a.size, a[1].size
 
 		if opcion == 1 
 			 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 			for i in 0...m -1  do 
 				c[i]= Array.new
 				for j in 0...n -1 do
@@ -42,7 +40,7 @@ m,n = a.size, a[1].size
 
         elsif opcion == 2  
 			   
->>>>>>> Prueba ramas
+
 			for i in 0...m do 
 				c[i]= Array.new
 				for j in 0...n do
@@ -56,7 +54,7 @@ m,n = a.size, a[1].size
 					c[i][j] = c[i][j] + (a[i][k] * b[k][j])
 					end
 				end
-=======
+
 			for i in 0...m -1  do 
 				c[i]= Array.new
 				for j in 0...n -1 do
@@ -67,7 +65,7 @@ m,n = a.size, a[1].size
 					c[i][j] = a[i][j] + b[i][j]
 				end
 			end
->>>>>>> funcion multiplicar
+
 			end
 			puts "\n La Matriz a es = "
 			a.each do |fila| puts fila.join(" ") end
@@ -75,17 +73,17 @@ m,n = a.size, a[1].size
 			b.each do |fila| puts fila.join(" ") end
 			puts "\n La multiplicaciión de la Matriz a y b es = "
 			c.each do |fila|puts fila.join(" ") end
-<<<<<<< HEAD
+
 
         elsif opcion == 2  
 			   
-<<<<<<< HEAD
+
 			print "Introduce el primer numero: "
 			x = gets.chomp.to_i 
 			print "Introduce el segundo numero: "
 			y = gets.chomp.to_i
 			puts "La multiplicacion de #{x} y #{y} vale #{x*y}"
-=======
+
 			for i in 0...m do 
 				c[i]= Array.new
 				for j in 0...n do
@@ -106,9 +104,7 @@ m,n = a.size, a[1].size
 			b.each do |fila| puts fila.join(" ") end
 			puts "\n La multiplicaciión de la Matriz a y b es = "
 			c.each do |fila|puts fila.join(" ") end
->>>>>>> funcion multiplicar
-=======
->>>>>>> Prueba ramas
+
 				
 		    else
 			print "FIN\n"	
