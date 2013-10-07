@@ -1,6 +1,3 @@
-#!/bin/env ruby
-# encoding: utf-8
-
 system("clear")# Borramos la pantalla
 a=[[2,0,1],[3,0,0],[5,1,1]]
 b=[[1,0,1],[1,2,1],[1,1,0]]
@@ -19,7 +16,6 @@ m,n = a.size, a[1].size
 
 		if opcion == 1 
 			 
-
 			for i in 0...m -1  do 
 				c[i]= Array.new
 				for j in 0...n -1 do
@@ -40,50 +36,6 @@ m,n = a.size, a[1].size
 
         elsif opcion == 2  
 			   
-
-			for i in 0...m do 
-				c[i]= Array.new
-				for j in 0...n do
-					c[i][j]=0
-				end
-			end	
-			
-			for i in 0...m do
-				for j in 0...n do
-					for k in 0...m do
-					c[i][j] = c[i][j] + (a[i][k] * b[k][j])
-					end
-				end
-
-			for i in 0...m -1  do 
-				c[i]= Array.new
-				for j in 0...n -1 do
-					c[i][j]=0
-				end			
-			for i in 0...m -1 do
-				for j in 0...n do
-					c[i][j] = a[i][j] + b[i][j]
-				end
-			end
-
-			end
-			puts "\n La Matriz a es = "
-			a.each do |fila| puts fila.join(" ") end
-			puts "\n La Matriz b es = " 
-			b.each do |fila| puts fila.join(" ") end
-			puts "\n La multiplicaciión de la Matriz a y b es = "
-			c.each do |fila|puts fila.join(" ") end
-
-
-        elsif opcion == 2  
-			   
-
-			print "Introduce el primer numero: "
-			x = gets.chomp.to_i 
-			print "Introduce el segundo numero: "
-			y = gets.chomp.to_i
-			puts "La multiplicacion de #{x} y #{y} vale #{x*y}"
-
 			for i in 0...m do 
 				c[i]= Array.new
 				for j in 0...n do
@@ -104,7 +56,6 @@ m,n = a.size, a[1].size
 			b.each do |fila| puts fila.join(" ") end
 			puts "\n La multiplicaciión de la Matriz a y b es = "
 			c.each do |fila|puts fila.join(" ") end
-
 				
 		    else
 			print "FIN\n"	
